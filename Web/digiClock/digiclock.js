@@ -2,7 +2,7 @@ const hoursEl = document.getElementById("hours");
 const minutesEl = document.getElementById("minutes");
 const secondsEl = document.getElementById("seconds");
 const ampmEl = document.getElementById("ampm");
-const btnEl = document.getElementById("timeformat");
+// const btnEl = document.getElementById("timeformat");
 
 updateClock();
 
@@ -13,7 +13,7 @@ function updateClock(){
    let ampm = "AM";
    
    if(h>12){
-        // h = h-12;
+        h = h-12;
     ampm = "PM";
    }
    h = h < 10 ? "0" + h : h;
@@ -26,9 +26,4 @@ function updateClock(){
    setTimeout(()=>{
        updateClock();
     },1000);
-    btnEl.addEventListener("click", e=>{
-        h = h-12;
-        hoursEl.innerText = h;
-        hoursEl.body.style = "active";
-   })
 }
