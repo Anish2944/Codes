@@ -59,5 +59,71 @@ body{
 .navbar.active{
     background-color:rgb(136, 209, 28);
 }
+.join{
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: chartreuse;
+    font-size: large;
+    cursor: pointer;
+}
+.pop-con{
+    position: fixed;
+    display: flex;
+    background-color: aliceblue;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 5%;
+    flex-direction: column;
+    left: 50%;
+    transform: translate(-50%);
+    width: 400px;
+    height: 200px;
+    top: 30%;
+    opacity: 1;
+    transition: all 0.7s;
+}
+h4{
+    font-size: xx-large;
+}
+label{
+    margin-top: 50px;
+    font-size: larger;
+}
+.blur.con{
+    filter: blur(5px) brightness(.7);
+}
+.input{
+    border: solid black;
+    padding: 5px;
+    font-size: 17px;
+    margin: 10px 0;
+    text-align: center;
+}
+.btn{
+    border: solid black;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 5px;
+    background-color: chartreuse;
+}
+.btn:hover{
+    filter: brightness(.7);
+}
+.join:hover{
+    filter: brightness(.7);
+}
+.cross{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+}
 
-
+.blur.pop-con{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}

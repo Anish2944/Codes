@@ -31,7 +31,7 @@ void main() {
   }
     while(ch == 'y' || ch == 'Y');
 }
-void push(){
+  void push(){
   int item;
   if(TOS == max-1){
     printf("Stack is Full\n");
