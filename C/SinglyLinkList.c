@@ -55,7 +55,7 @@ void main()
             printf("Enter the CORRECT CHOICE.\n");
         }
         fflush(stdin);
-        printf("\nDo you wish to continue(1/0)?\n");
+        printf("\nDo you wish to continue(Y/N)?\n");
         scanf("%c", &ch);
     } while (ch == 'Y' || ch == 'y');
     // NODE *second;
