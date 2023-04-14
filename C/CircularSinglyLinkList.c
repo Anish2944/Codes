@@ -96,6 +96,12 @@ void InsertAtFirst()
     printf("Enter the data to be inserted at FIRST:\n");
     scanf("%d", &item);
     P->data = item;
+    // if (FIRST == NULL)
+    // {
+    //     FIRST = LAST = P;
+    //     P->next = FIRST;
+    // }
+    
     Temp = FIRST->next;
     while (Temp->next != FIRST)
     {
