@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CLone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
 </head>
 <body>
     <div class="top-banner">
@@ -12,9 +13,9 @@
             <div class="banner-text">📣 Interviews is now in beta! Read more →</div>
         </div>
     </div>
-    <nav class="container flex">
+    <nav class="container .nav flex">
         <div><a href="#"><img class="logo" src="./assets/asset 1.png" alt="logo"></a></div>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
             <ul class="flex link">
                 <li><a class="hover-link" href="#">Product</a></li>
                 <li><a class="hover-link" href="#">Customer</a></li>
@@ -24,6 +25,9 @@
                 <li><a class="hover-link button-2" href="#">Sign up</a></li>
             </ul>
         </div>
+        <a href="#" class="nav-toggle hover-link" id="nav-toggle">
+            <i class="fa-solid fa-bars"></i>
+        </a>
     </nav>
     <header class="container flex">
         <div class="head-left flex">
@@ -100,7 +104,7 @@
         </div>
     </section>
     <section class="big-features">
-        <div class="container flex">
+        <div class="container b-f-c flex">
             <div class="head-right">
                 <img src="./assets/asset 18.png" alt="">
             </div>
@@ -127,33 +131,34 @@
         </div>
     </section>
     <section class="big-features flex">
-        <div class="container flex" style="flex-direction: row-reverse;">
-            <div class="head-right">
-                <img src="./assets/asset 21.png" alt="">
-            </div>
+        <div class="container b-f-c-1 flex">
             <div class="head-left">
                 <div class="feature-right-up">
                     <h4>Optimization for</h4>
                     <h2>Marketers</h2>
                     <p>Fine-tune landing pages, messaging, and creative, helping you optimize conversion rates on marketing campaigns and product launches.</p>
                     <div class="feature-right-down">
-                    <img src="./assets/asset 22.png">
-                    <div class="test">
-                        <p><strong>We use UsabilityHub tests to help us make decisions for various projects. From web and mobile design to marketing activities.</strong></p>
-                    </div>    
-                    <div class="emp flex">
-                        <img src="./assets/asset 23.png">
-                        <div class="name">
-                            <p><strong>Rick van de Ven</strong></p>
-                            <p>Digital Marketing Analyst</p>
+                        <img src="./assets/asset 22.png">
+                        <div class="test">
+                            <p><strong>We use UsabilityHub tests to help us make decisions for various projects. From web and mobile design to marketing activities.</strong></p>
+                        </div>    
+                        <div class="emp flex">
+                            <img src="./assets/asset 23.png">
+                            <div class="name">
+                                <p><strong>Rick van de Ven</strong></p>
+                                <p>Digital Marketing Analyst</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="head-right">
+                <img src="./assets/asset 21.png" alt="">
+            </div>
         </div>
     </section>
     <section class="big-features">
-        <div class="container flex">
+        <div class="container b-f-c flex">
             <div class="head-right">
                 <img src="./assets/asset 24.png" alt="">
             </div>
@@ -221,7 +226,7 @@
             <div class="cta-part-2">
                 <div>
                     <img class="cta-img-1" src="./assets/asset 40.png">
-                </div>
+                </div class="cta-img">
                 <div>
                     <img class="cta-img-2"  src="./assets/asset 41.png">
                     <div class="inside-text flex">
@@ -302,5 +307,14 @@
     </div>
     
     <script src="https://kit.fontawesome.com/96be32af31.js" crossorigin="anonymous"></script>
+
+    <script>
+        const navLinks = document.getElementById("nav-links");
+        const navToggle = document.getElementById("nav-toggle");
+
+        navToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>

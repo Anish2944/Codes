@@ -9,6 +9,7 @@ a{
 .container{
     max-width: 1180px;
     margin-inline: auto;
+    overflow: hidden;
     padding-inline: 20px;
 }
 .flex{
@@ -30,6 +31,10 @@ nav{
     margin-top: 20px;
     justify-content: space-between;
 }
+.nav-toggle.hover-link {
+    display: none;
+}
+
 .logo{
     width: 200px;
     margin-top: 3px;
@@ -92,7 +97,7 @@ header{
     color: #222;
 }
 .head-right img{
-    width: 600px;
+    width: 100%;
 }
 .card-text{
     color: #434040;
@@ -115,8 +120,10 @@ header{
     color: #222;
 }
 .logos{
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     margin-top: 40px;
+    gap: 20px;
 }
 .logo-c{
     height: 40px;
@@ -218,6 +225,7 @@ header{
 .example-img{
     justify-content: space-between;
     margin: 25px 0;
+    flex-wrap: wrap;
 }
 .link-img{
     position: relative;
@@ -250,7 +258,9 @@ header{
     background: linear-gradient(rgb(0, 0, 0, 0.1),rgb(0, 0, 0, 0.8)), url(./assets/asset\ 39.jpeg);
     background-size: cover;
 }
-
+.cta-section{
+    padding: 20px;
+}
 .cta{
     background-color: #183b54;
 }
@@ -294,13 +304,13 @@ header{
 }
 .cta-part-2{
     position: relative;
-    display: inline-block;
 }
 .cta-img-1{
-    height: 550px;
+    width: 100%;
 }
 .cta-img-2{
-    position: absolute; 
+    position: absolute;
+    width: 55%;
     top: 25%; 
     bottom: 25%;
     left: 25%;
@@ -358,7 +368,6 @@ footer{
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    
 }
 .sub a{
     margin: 0 20px;
