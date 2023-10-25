@@ -24,6 +24,7 @@ input[type="text"]::-webkit-search-cancel-button{
 .list-box{
     background-color: #ffffff;
     display: flex;
+    position: relative;
     text-align: center;
     border-radius: 30px;
     justify-content: space-between;
@@ -65,8 +66,7 @@ label{
 }
 .i{
     color: rgb(30, 31, 63);
-    margin-left: 50%;
-    padding-bottom: 20px;
+    margin-left: 40%;
 }
 .i:hover{
     color: red;
@@ -77,4 +77,9 @@ label{
     margin-top: 20px;
     /* display: flex;
     justify-content: space-between; */
+}
+
+#addbtn{
+    position: absolute;
+    right: 20px;
 }
