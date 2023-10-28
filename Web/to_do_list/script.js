@@ -8,6 +8,9 @@ addbtn.addEventListener("click", () => {
 
     let inputCount = 0;
 
+    const div = document.createElement("div");
+    div.className = "list-task";
+
     const input = document.createElement("input");
     input.type = "checkbox";
     input.name = `DynamicInput${inputCount}`;
@@ -19,10 +22,11 @@ addbtn.addEventListener("click", () => {
     const i = document.createElement("i");
     i.classList = `i fa-solid fa-trash fa-xs`;
     i.style.display = `none`;
-
-    Tasklist.appendChild(label);
-    Tasklist.appendChild(input);
-    Tasklist.appendChild(i);
+    
+    Tasklist.appendChild(div);
+    div.appendChild(input);
+    div.appendChild(label);
+    div.appendChild(i);
     
     label.addEventListener("click", ()=>{
         label.classList.toggle("labelClick");
@@ -35,9 +39,10 @@ addbtn.addEventListener("click", () => {
     });
 
     i.addEventListener("click", ()=>{
-        Tasklist.removeChild(label);
-        Tasklist.removeChild(input);
-        Tasklist.removeChild(i);
+        Tasklist.removeChild(div);
+        div.removeChild(label);
+        div.removeChild(input);
+        div.removeChild(i);
     });
 
     Task.value ="";
