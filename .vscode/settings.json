@@ -26,5 +26,12 @@
     "*",
     "**/*"
   ],
-  "C_Cpp_Runner.useAddressSanitizer": false
+  "C_Cpp_Runner.useAddressSanitizer": false,
+  "C_Cpp_Runner.showCompilationTime": false,
+  "git.ignoreLimitWarning": true,
+  "cSpell.words": [
+    "addbtn",
+    "linkedln",
+    "SCIM"
+  ]
 }
