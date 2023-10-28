@@ -88,3 +88,14 @@ label{
     position: absolute;
     right: 20px;
 }
+
+@media (max-width: 768px) {
+    /* Add styles for smaller screens here */
+    .container {
+        width: 90%;
+    }
+    .list-box {
+        padding: 10px;
+    }
+    /* Add more responsive styles as needed */
+}
