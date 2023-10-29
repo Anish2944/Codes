@@ -11,7 +11,7 @@ function calculateAge() {
     const ageInMilliseconds = today - birthDate;
     const ageInYears = ageInMilliseconds / (365 * 24 * 60 * 60 * 1000);
   
-    resultElement.textContent = `You age is ${ageInYears.toFixed(2)}.`;
+    resultElement.textContent = `You age is ${Math.floor(ageInYears)}.`;
   }
 
   btn.addEventListener("click", calculateAge);
