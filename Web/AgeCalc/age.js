@@ -13,7 +13,7 @@ function calculateAge() {
 
     const age = Math.floor(ageInYears);
   
-    resultElement.textContent = `Your age is ${age}.`;
+    resultElement.textContent = `Your age is ${age} years.`;
   }
 
   btn.addEventListener("click", calculateAge);
